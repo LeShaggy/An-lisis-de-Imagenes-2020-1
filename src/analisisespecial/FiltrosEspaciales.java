@@ -144,12 +144,6 @@ public static Image expansionLineal(Histogramas h, Image imagen){
                     validarLimites(g),
                     validarLimites(b));
             bi.setRGB(x,y,color.getRGB());
-
-            //calcula el promedio
-           // int total = ((r + g + b)/3);
-           // ValorFinalPixel = (int)  (255/(max - min))*(total-min);
-           // colorFinal = (0x00000000 | (ValorFinalPixel << 16 ) |(ValorFinalPixel));
-            // bi.setRGB(x,y,colorFinal);..
         }
 
     return AbrirImagen.toImage(bi);
@@ -215,25 +209,6 @@ public static Image expansionLineal(Histogramas h, Image imagen){
         return AbrirImagen.toImage(big);
     }
 
-    public static Image expancionOP(Image imagen,double z ){
-
-        BufferedImage bi = AbrirImagen.toBufferedImage(imagen);
-        Color color;
-        for(int x=0; x<bi.getWidth();x++)
-            for(int y=0; y<bi.getHeight();y++){
-                color = new Color(bi.getRGB(x, y));
-                int r = (int )(pow(((255*log(1+color.getRed()))/log(255)),z));
-                int g = (int )(pow(((255*log(1+color.getGreen()))/log(255)),z));
-                int b = (int )(pow(((255*log(1+color.getBlue()))/log(255)),z));
-                color = new Color(validarLimites(r),
-                        validarLimites(g),
-                        validarLimites(b));
-                bi.setRGB(x,y,color.getRGB());
-            }
-        return AbrirImagen.toImage(bi);
-    }
-
-
 
     public static int metodoIterativo(double[] histograma){
 
@@ -281,5 +256,38 @@ public static Image expansionLineal(Histogramas h, Image imagen){
         return (int)((u1+u2)/2);
     }
 
+
+    public static Image ecualizarImagen(Image imagen){
+
+        int nxm = imagen.getWidth(null)*imagen.getHeight(null);
+        Histogramas h = new Histogramas(imagen);
+        double[] ho = h.getHRed();
+        double[] daf = new double[256];
+        int[] nt = new int[256];
+        daf[0] = (int)ho[0];
+        nt[0] = (int)Math.round((daf[0]/nxm)*255);
+        // recorremos el histograma para acumular
+        for(int x=1; x<ho.length;x++){
+            daf[x] = (int)(ho[x]+daf[x-1]);
+            double aux = daf[x]/nxm;
+            int tmp = (int) Math.round(aux * 255);
+            nt[x] = tmp;
+        }
+
+        BufferedImage bi = AbrirImagen.toBufferedImage(imagen);
+        Color color;
+        for(int x=0; x<bi.getWidth();x++)
+            for(int y=0; y<bi.getHeight();y++){
+                color = new Color(bi.getRGB(x, y));
+                int t = color.getRed();
+                int t2 =nt[t];
+                color = new Color(t2,t2,t2);
+                bi.setRGB(x,y,color.getRGB());
+            }
+
+
+        return AbrirImagen.toImage(bi);
+
+    }
 
 }
