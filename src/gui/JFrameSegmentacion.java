@@ -77,4 +77,4 @@ public class JFrameSegmentacion extends JFrame {
     }
 
 
-}
+} // End class

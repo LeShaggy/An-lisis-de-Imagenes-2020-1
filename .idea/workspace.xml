@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45163483-db01-4479-8ea5-2e0a1c9b2875" name="Default Changelist" comment="corrigiendo error 4">
-      <change afterPath="$PROJECT_DIR$/src/analisisespecial/Convolucion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f225c2d7-5dc3-429f-a9d4-c34b359dd778" name="Commit 5" comment="">
+      <change beforePath="$PROJECT_DIR$/src/gui/JFrameSegmentacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/JFrameSegmentacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/JframeImagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/JframeImagen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/open/AbrirImagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/open/AbrirImagen.java" afterDir="false" />
+    </list>
+    <list id="45163483-db01-4479-8ea5-2e0a1c9b2875" name="Default Changelist" comment="Analisis especial corregido">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AI.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AI/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AI/Main.class" afterDir="false" />
@@ -42,6 +45,16 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/open/AbrirImagen.java">
+      <ranges>
+        <range start1="1" end1="6" start2="1" end2="1" changelist="45163483-db01-4479-8ea5-2e0a1c9b2875" />
+        <range start1="7" end1="8" start2="2" end2="3" changelist="45163483-db01-4479-8ea5-2e0a1c9b2875" />
+        <range start1="9" end1="9" start2="4" end2="8" changelist="45163483-db01-4479-8ea5-2e0a1c9b2875" />
+        <range start1="66" end1="67" start2="65" end2="66" changelist="f225c2d7-5dc3-429f-a9d4-c34b359dd778" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectId" id="1Xy1VwN5ghKSxy9rN4VYSd4Vjys" />
   <component name="ProjectViewState">
@@ -85,6 +98,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="45163483-db01-4479-8ea5-2e0a1c9b2875" name="Default Changelist" comment="" />
+      <changelist id="f225c2d7-5dc3-429f-a9d4-c34b359dd778" name="Commit 5" comment="" />
       <created>1582003547607</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -135,7 +149,7 @@
       <workItem from="1589352208773" duration="814000" />
       <workItem from="1589566539696" duration="322000" />
       <workItem from="1594098472991" duration="3831000" />
-      <workItem from="1594148869522" duration="930000" />
+      <workItem from="1594148869522" duration="3064000" />
     </task>
     <task id="LOCAL-00001" summary="AI_P2_prueba">
       <created>1583288251952</created>
@@ -227,10 +241,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594104827111" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1594150213030">
+    <state x="638" y="328" key="VCS.EditChangelistDialog" timestamp="1594152276818">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1594150213030" />
+    <state x="638" y="328" key="VCS.EditChangelistDialog/0.0.1536.824@0.0.1536.824" timestamp="1594152276818" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1594150379820">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1594150379820" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1594148870461">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

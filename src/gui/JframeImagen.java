@@ -1,9 +1,7 @@
 package gui;
 
-import java.awt.Image;
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
+import javax.swing.*;
+import java.awt.*;
 
 public class JframeImagen extends JFrame{
 
@@ -20,7 +18,7 @@ public class JframeImagen extends JFrame{
 
 
     }
-
+//
     public Image getImagenOriginal(){
         return this.imagenOriginal;
     }
@@ -29,4 +27,4 @@ public class JframeImagen extends JFrame{
     }
 
 
-}
+} // End class
